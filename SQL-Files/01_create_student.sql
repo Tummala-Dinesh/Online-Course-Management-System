@@ -1,0 +1,8 @@
+CREATE TABLE Student (
+    StudentID INT PRIMARY KEY,
+    FName VARCHAR(50) NOT NULL,
+    MName VARCHAR(50),
+    LName VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) UNIQUE,
+    EnrollDate DATE DEFAULT CURRENT_DATE
+);
