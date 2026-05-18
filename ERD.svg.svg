@@ -1,0 +1,365 @@
+<svg width="1800" height="1260" viewBox="0 0 1800 1260" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff;">
+<defs>
+  <style>
+    text { font-family: 'Segoe UI', Arial, sans-serif; }
+    .eb  { fill:#EEF3FB; stroke:#2558A8; stroke-width:2.2; }
+    .rd  { fill:#FFFBE6; stroke:#A07800; stroke-width:1.8; }
+    .ao  { fill:#F7F7F7; stroke:#5C5C5C; stroke-width:1.2; }
+    .cn  { stroke:#444; stroke-width:1.2; fill:none; }
+    .pk  { stroke:#2558A8; stroke-width:1.5; fill:none; }
+    .card{ font-size:14px; font-weight:700; fill:#B83030; font-family:'Segoe UI',Arial,sans-serif; }
+    .el  { font-size:15px; font-weight:700; fill:#18376E; font-family:'Segoe UI',Arial,sans-serif; }
+    .rl  { font-size:12px; font-weight:700; fill:#6B4C00; font-family:'Segoe UI',Arial,sans-serif; }
+    .al  { font-size:11px; fill:#2E2E2E; font-family:'Segoe UI',Arial,sans-serif; }
+    .ttl { font-size:20px; font-weight:700; fill:#18376E; font-family:'Segoe UI',Arial,sans-serif; }
+    .lt  { font-size:13px; font-weight:700; fill:#333; font-family:'Segoe UI',Arial,sans-serif; }
+    .ll  { font-size:11px; fill:#444; font-family:'Segoe UI',Arial,sans-serif; }
+  </style>
+</defs>
+
+<!-- ═══════════════════════════════════
+     ENTITY: INSTRUCTOR  (center 200,200)
+═══════════════════════════════════ -->
+<rect class="eb" x="130" y="180" width="140" height="40" rx="3"/>
+<text class="el" x="200" y="205" text-anchor="middle">Instructor</text>
+
+<ellipse class="ao" cx="96"  cy="100" rx="52" ry="18"/>
+<text    class="al" x="96"   y="104" text-anchor="middle">InstructorID</text>
+<line class="pk"  x1="46"  y1="112" x2="146" y2="112"/>
+<line class="cn"  x1="100" y1="118" x2="152" y2="180"/>
+
+<ellipse class="ao" cx="200" cy="100" rx="32" ry="18"/>
+<text    class="al" x="200" y="104" text-anchor="middle">FName</text>
+<line class="cn"  x1="200" y1="118" x2="200" y2="180"/>
+
+<ellipse class="ao" cx="314" cy="100" rx="32" ry="18"/>
+<text    class="al" x="314" y="104" text-anchor="middle">LName</text>
+<line class="cn"  x1="302" y1="116" x2="256" y2="180"/>
+
+<ellipse class="ao" cx="110" cy="305" rx="30" ry="18"/>
+<text    class="al" x="110" y="309" text-anchor="middle">Email</text>
+<line class="cn"  x1="128" y1="291" x2="162" y2="220"/>
+
+<ellipse class="ao" cx="212" cy="305" rx="28" ry="18"/>
+<text    class="al" x="212" y="309" text-anchor="middle">Dept</text>
+<line class="cn"  x1="212" y1="287" x2="208" y2="220"/>
+
+
+<!-- ═══════════════════════════════════
+     RELATIONSHIP: teaches  diamond (425,200)
+═══════════════════════════════════ -->
+<line class="cn"  x1="270" y1="200" x2="385" y2="200"/>
+<polygon class="rd" points="385,200 425,182 465,200 425,218"/>
+<text class="rl"  x="425" y="204" text-anchor="middle">teaches</text>
+<line class="cn"  x1="465" y1="200" x2="580" y2="200"/>
+<text class="card" x="282" y="193">1</text>
+<text class="card" x="540" y="193">N</text>
+
+
+<!-- ═══════════════════════════════════
+     ENTITY: COURSE  (center 650,200)
+═══════════════════════════════════ -->
+<rect class="eb" x="580" y="180" width="140" height="40" rx="3"/>
+<text class="el"  x="650" y="205" text-anchor="middle">Course</text>
+
+<ellipse class="ao" cx="558" cy="100" rx="42" ry="18"/>
+<text    class="al" x="558" y="104" text-anchor="middle">CourseID</text>
+<line class="pk"  x1="518" y1="112" x2="598" y2="112"/>
+<line class="cn"  x1="566" y1="116" x2="596" y2="180"/>
+
+<ellipse class="ao" cx="652" cy="100" rx="28" ry="18"/>
+<text    class="al" x="652" y="104" text-anchor="middle">Title</text>
+<line class="cn"  x1="652" y1="118" x2="650" y2="180"/>
+
+<ellipse class="ao" cx="748" cy="100" rx="34" ry="18"/>
+<text    class="al" x="748" y="104" text-anchor="middle">Credits</text>
+<line class="cn"  x1="736" y1="116" x2="706" y2="180"/>
+
+
+<!-- ═══════════════════════════════════
+     RELATIONSHIP: has  diamond (650,315)
+═══════════════════════════════════ -->
+<line class="cn"  x1="650" y1="220" x2="650" y2="298"/>
+<polygon class="rd" points="650,298 682,315 650,332 618,315"/>
+<text class="rl"  x="650" y="319" text-anchor="middle">has</text>
+<line class="cn"  x1="650" y1="332" x2="650" y2="400"/>
+<text class="card" x="658" y="238">1</text>
+<text class="card" x="658" y="392">N</text>
+
+
+<!-- ═══════════════════════════════════
+     ENTITY: MODULE  (center 650,420)
+═══════════════════════════════════ -->
+<rect class="eb" x="580" y="400" width="140" height="40" rx="3"/>
+<text class="el"  x="650" y="425" text-anchor="middle">Module</text>
+
+<ellipse class="ao" cx="458" cy="388" rx="44" ry="18"/>
+<text    class="al" x="458" y="392" text-anchor="middle">ModuleID</text>
+<line class="pk"  x1="416" y1="400" x2="500" y2="400"/>
+<line class="cn"  x1="501" y1="398" x2="580" y2="416"/>
+
+<ellipse class="ao" cx="462" cy="440" rx="28" ry="18"/>
+<text    class="al" x="462" y="444" text-anchor="middle">Title</text>
+<line class="cn"  x1="490" y1="436" x2="580" y2="426"/>
+
+<ellipse class="ao" cx="848" cy="410" rx="46" ry="18"/>
+<text    class="al" x="848" y="414" text-anchor="middle">OrderIndex</text>
+<line class="cn"  x1="803" y1="413" x2="720" y2="418"/>
+
+
+<!-- ═══════════════════════════════════
+     RELATIONSHIP: contains  diamond (650,535)
+═══════════════════════════════════ -->
+<line class="cn"  x1="650" y1="440" x2="650" y2="518"/>
+<polygon class="rd" points="650,518 686,535 650,552 614,535"/>
+<text class="rl"  x="650" y="539" text-anchor="middle">contains</text>
+<line class="cn"  x1="650" y1="552" x2="650" y2="620"/>
+<text class="card" x="658" y="456">1</text>
+<text class="card" x="658" y="613">N</text>
+
+
+<!-- ═══════════════════════════════════
+     ENTITY: ASSIGNMENT  (center 650,640)
+═══════════════════════════════════ -->
+<rect class="eb" x="570" y="620" width="160" height="40" rx="3"/>
+<text class="el"  x="650" y="645" text-anchor="middle">Assignment</text>
+
+<ellipse class="ao" cx="440" cy="614" rx="54" ry="18"/>
+<text    class="al" x="440" y="618" text-anchor="middle">AssignmentID</text>
+<line class="pk"  x1="388" y1="626" x2="492" y2="626"/>
+<line class="cn"  x1="492" y1="625" x2="572" y2="633"/>
+
+<ellipse class="ao" cx="618" cy="708" rx="28" ry="18"/>
+<text    class="al" x="618" y="712" text-anchor="middle">Title</text>
+<line class="cn"  x1="620" y1="690" x2="630" y2="660"/>
+
+<ellipse class="ao" cx="860" cy="618" rx="48" ry="18"/>
+<text    class="al" x="860" y="622" text-anchor="middle">MaxPoints</text>
+<line class="cn"  x1="814" y1="622" x2="730" y2="633"/>
+
+<ellipse class="ao" cx="860" cy="662" rx="40" ry="18"/>
+<text    class="al" x="860" y="666" text-anchor="middle">DueDate</text>
+<line class="cn"  x1="821" y1="660" x2="730" y2="648"/>
+
+
+<!-- ═══════════════════════════════════
+     ENTITY: STUDENT  (center 200,640)
+═══════════════════════════════════ -->
+<rect class="eb" x="130" y="620" width="140" height="40" rx="3"/>
+<text class="el"  x="200" y="645" text-anchor="middle">Student</text>
+
+<ellipse class="ao" cx="150" cy="552" rx="44" ry="18"/>
+<text    class="al" x="150" y="556" text-anchor="middle">StudentID</text>
+<line class="pk"  x1="108" y1="564" x2="192" y2="564"/>
+<line class="cn"  x1="158" y1="568" x2="172" y2="620"/>
+
+<ellipse class="ao" cx="72" cy="630" rx="30" ry="18"/>
+<text    class="al" x="72" y="634" text-anchor="middle">FName</text>
+<line class="cn"  x1="102" y1="630" x2="130" y2="630"/>
+
+<ellipse class="ao" cx="72" cy="676" rx="30" ry="18"/>
+<text    class="al" x="72" y="680" text-anchor="middle">LName</text>
+<line class="cn"  x1="102" y1="670" x2="138" y2="654"/>
+
+<ellipse class="ao" cx="90" cy="718" rx="30" ry="18"/>
+<text    class="al" x="90" y="722" text-anchor="middle">Email</text>
+<line class="cn"  x1="110" y1="705" x2="152" y2="660"/>
+
+<ellipse class="ao" cx="316" cy="604" rx="34" ry="18"/>
+<text    class="al" x="316" y="608" text-anchor="middle">MName</text>
+<line class="cn"  x1="284" y1="607" x2="255" y2="625"/>
+
+<ellipse class="ao" cx="320" cy="660" rx="44" ry="18"/>
+<text    class="al" x="320" y="664" text-anchor="middle">EnrollDate</text>
+<line class="cn"  x1="278" y1="657" x2="256" y2="645"/>
+
+
+<!-- ═══════════════════════════════════
+     RELATIONSHIP: enrolls  diamond (390,780)
+═══════════════════════════════════ -->
+<line class="cn"  x1="200" y1="660" x2="200" y2="780"/>
+<line class="cn"  x1="200" y1="780" x2="350" y2="780"/>
+<polygon class="rd" points="350,780 390,762 430,780 390,798"/>
+<text class="rl"  x="390" y="784" text-anchor="middle">enrolls</text>
+<line class="cn"  x1="430" y1="780" x2="520" y2="848"/>
+<text class="card" x="208" y="730">1</text>
+<text class="card" x="456" y="825">N</text>
+
+
+<!-- ═══════════════════════════════════
+     ENTITY: ENROLLMENT  (center 590,860)
+═══════════════════════════════════ -->
+<rect class="eb" x="510" y="840" width="160" height="40" rx="3"/>
+<text class="el"  x="590" y="865" text-anchor="middle">Enrollment</text>
+
+<ellipse class="ao" cx="484" cy="788" rx="40" ry="18"/>
+<text    class="al" x="484" y="792" text-anchor="middle">EnrollID</text>
+<line class="pk"  x1="446" y1="800" x2="522" y2="800"/>
+<line class="cn"  x1="518" y1="803" x2="535" y2="840"/>
+
+<ellipse class="ao" cx="682" cy="788" rx="50" ry="18"/>
+<text    class="al" x="682" y="792" text-anchor="middle">EnrollStatus</text>
+<line class="cn"  x1="648" y1="802" x2="640" y2="840"/>
+
+
+<!-- ═══════════════════════════════════════════════
+     RELATIONSHIP: enrolled  diamond (1006,548)
+     LEFT connection:  Enrollment right (670,850) → x=970 → up → diamond bottom-left point
+     RIGHT connection: diamond top-right point → up to y=200 → Course right (720,200)
+     Diamond points: (970,568) (1006,548) (1042,568) (1006,588)
+═══════════════════════════════════════════════ -->
+<line class="cn"  x1="670" y1="850" x2="970" y2="850"/>
+<line class="cn"  x1="970" y1="850" x2="970" y2="568"/>
+<polygon class="rd" points="970,568 1006,548 1042,568 1006,588"/>
+<text class="rl"  x="1006" y="572" text-anchor="middle">enrolled</text>
+<line class="cn"  x1="1006" y1="548" x2="1006" y2="200"/>
+<line class="cn"  x1="1006" y1="200" x2="720"  y2="200"/>
+<text class="card" x="680" y="843">N</text>
+<text class="card" x="724" y="193">1</text>
+
+
+<!-- ═══════════════════════════════════
+     RELATIONSHIP: submits  diamond (590,965)
+═══════════════════════════════════ -->
+<line class="cn"  x1="590" y1="880" x2="590" y2="947"/>
+<polygon class="rd" points="590,947 626,965 590,983 554,965"/>
+<text class="rl"  x="590" y="969" text-anchor="middle">submits</text>
+<line class="cn"  x1="590" y1="983" x2="590" y2="1050"/>
+<text class="card" x="598" y="898">1</text>
+<text class="card" x="598" y="1042">N</text>
+
+
+<!-- ═══════════════════════════════════
+     ENTITY: SUBMISSION  (center 590,1070)
+═══════════════════════════════════ -->
+<rect class="eb" x="510" y="1050" width="160" height="40" rx="3"/>
+<text class="el"  x="590" y="1075" text-anchor="middle">Submission</text>
+
+<ellipse class="ao" cx="388" cy="1052" rx="56" ry="18"/>
+<text    class="al" x="388" y="1056" text-anchor="middle">SubmissionID</text>
+<line class="pk"  x1="334" y1="1064" x2="442" y2="1064"/>
+<line class="cn"  x1="442" y1="1063" x2="512" y2="1065"/>
+
+<ellipse class="ao" cx="565" cy="1140" rx="48" ry="18"/>
+<text    class="al" x="565" y="1144" text-anchor="middle">SubmittedAt</text>
+<line class="cn"  x1="567" y1="1122" x2="578" y2="1090"/>
+
+<ellipse class="ao" cx="762" cy="1072" rx="40" ry="18"/>
+<text    class="al" x="762" y="1076" text-anchor="middle">FileURL</text>
+<line class="cn"  x1="722" y1="1072" x2="670" y2="1068"/>
+
+
+<!-- ═══════════════════════════════════════════════
+     RELATIONSHIP: for  diamond (876,938)
+     LEFT connection:  Submission right (670,1070) → right → x=840 → up → diamond left point
+     RIGHT connection: diamond right point → up → y=660 → Assignment right (730,660)
+     Diamond points: (840,958) (876,938) (912,958) (876,978)
+═══════════════════════════════════════════════ -->
+<line class="cn"  x1="670" y1="1070" x2="840" y2="1070"/>
+<line class="cn"  x1="840" y1="1070" x2="840" y2="958"/>
+<polygon class="rd" points="840,958 876,938 912,958 876,978"/>
+<text class="rl"  x="876" y="962" text-anchor="middle">for</text>
+<line class="cn"  x1="876" y1="938" x2="876" y2="660"/>
+<line class="cn"  x1="876" y1="660" x2="730" y2="660"/>
+<text class="card" x="815" y="1064">N</text>
+<text class="card" x="733" y="652">1</text>
+
+
+<!-- ═══════════════════════════════════════════════
+     RELATIONSHIP: appears  diamond (1070,860)
+     LEFT connection:  Enrollment right (670,858) → diamond left point (1032,858)
+     RIGHT connection: diamond right point (1108,858) → Exam left (1130,860)
+═══════════════════════════════════════════════ -->
+<line class="cn"  x1="670" y1="858" x2="1032" y2="858"/>
+<polygon class="rd" points="1032,858 1070,840 1108,858 1070,876"/>
+<text class="rl"  x="1070" y="862" text-anchor="middle">appears</text>
+<line class="cn"  x1="1108" y1="858" x2="1130" y2="860"/>
+<text class="card" x="684" y="850">1</text>
+<text class="card" x="1114" y="850">N</text>
+
+
+<!-- ═══════════════════════════════════
+     ENTITY: EXAM  (center 1200,860)
+═══════════════════════════════════ -->
+<rect class="eb" x="1130" y="840" width="140" height="40" rx="3"/>
+<text class="el"  x="1200" y="865" text-anchor="middle">Exam</text>
+
+<ellipse class="ao" cx="1142" cy="788" rx="36" ry="18"/>
+<text    class="al" x="1142" y="792" text-anchor="middle">ExamID</text>
+<line class="pk"  x1="1108" y1="800" x2="1176" y2="800"/>
+<line class="cn"  x1="1152" y1="804" x2="1170" y2="840"/>
+
+<ellipse class="ao" cx="1260" cy="788" rx="46" ry="18"/>
+<text    class="al" x="1260" y="792" text-anchor="middle">ExamDate</text>
+<line class="cn"  x1="1238" y1="804" x2="1230" y2="840"/>
+
+<ellipse class="ao" cx="1424" cy="860" rx="58" ry="18"/>
+<text    class="al" x="1424" y="864" text-anchor="middle">ScoreObtained</text>
+<line class="cn"  x1="1366" y1="860" x2="1270" y2="860"/>
+
+
+<!-- ═══════════════════════════════════════════════
+     RELATIONSHIP: receives  diamond (1106,1108)
+     LEFT connection:  Enrollment bottom (590,880) → down y=1190 → right x=1070 → up → diamond bottom
+     RIGHT connection: diamond top → up → Grade left (1130,1070)
+     Route goes BELOW Submission to avoid crossing
+═══════════════════════════════════════════════ -->
+<line class="cn"  x1="590" y1="880" x2="590" y2="1190"/>
+<line class="cn"  x1="590" y1="1190" x2="1070" y2="1190"/>
+<line class="cn"  x1="1070" y1="1190" x2="1070" y2="1128"/>
+<polygon class="rd" points="1070,1128 1106,1108 1142,1128 1106,1148"/>
+<text class="rl"  x="1106" y="1132" text-anchor="middle">receives</text>
+<line class="cn"  x1="1106" y1="1108" x2="1130" y2="1090"/>
+<text class="card" x="598" y="1020">1</text>
+<text class="card" x="1114" y="1084">N</text>
+
+
+<!-- ═══════════════════════════════════
+     ENTITY: GRADE  (center 1200,1070)
+═══════════════════════════════════ -->
+<rect class="eb" x="1130" y="1050" width="140" height="40" rx="3"/>
+<text class="el"  x="1200" y="1075" text-anchor="middle">Grade</text>
+
+<ellipse class="ao" cx="1138" cy="998" rx="38" ry="18"/>
+<text    class="al" x="1138" y="1002" text-anchor="middle">GradeID</text>
+<line class="pk"  x1="1102" y1="1010" x2="1174" y2="1010"/>
+<line class="cn"  x1="1152" y1="1014" x2="1168" y2="1050"/>
+
+<ellipse class="ao" cx="1264" cy="998" rx="50" ry="18"/>
+<text    class="al" x="1264" y="1002" text-anchor="middle">FinalScore</text>
+<line class="cn"  x1="1236" y1="1012" x2="1224" y2="1050"/>
+
+<ellipse class="ao" cx="1424" cy="1070" rx="52" ry="18"/>
+<text    class="al" x="1424" y="1074" text-anchor="middle">FinalGrade</text>
+<line class="cn"  x1="1372" y1="1070" x2="1270" y2="1070"/>
+
+
+<!-- ═══════════════════════════════════
+     LEGEND (top-right corner, y=70)
+═══════════════════════════════════ -->
+<rect x="1370" y="70" width="270" height="220" rx="8" fill="#FAFAFA" stroke="#CCCCCC" stroke-width="1.3"/>
+<text class="lt" x="1505" y="97"  text-anchor="middle">Legend</text>
+
+<rect  x="1388" y="108" width="58" height="28" rx="3" fill="#EEF3FB" stroke="#2558A8" stroke-width="2.2"/>
+<text  class="ll" x="1458" y="127">Entity</text>
+
+<polygon points="1388,168 1417,152 1446,168 1417,184" fill="#FFFBE6" stroke="#A07800" stroke-width="1.8"/>
+<text   class="ll" x="1458" y="172">Relationship</text>
+
+<ellipse cx="1417" cy="210" rx="28" ry="14" fill="#F7F7F7" stroke="#5C5C5C" stroke-width="1.2"/>
+<text   class="ll" x="1458" y="214">Attribute</text>
+
+<ellipse cx="1417" cy="244" rx="28" ry="14" fill="#F7F7F7" stroke="#5C5C5C" stroke-width="1.2"/>
+<line   x1="1391" y1="253" x2="1443" y2="253" stroke="#2558A8" stroke-width="1.5"/>
+<text   class="ll" x="1458" y="248">Primary Key Attr.</text>
+
+<text style="font-size:14px;font-weight:700;fill:#B83030;font-family:'Segoe UI',Arial,sans-serif;" x="1408" y="278">1 / N</text>
+<text class="ll" x="1458" y="278">Cardinality</text>
+
+
+<!-- ═══════════════════════════════════
+     TITLE
+═══════════════════════════════════ -->
+<text class="ttl" x="900" y="1225" text-anchor="middle">Online Course Management System – ER Diagram (Chen Notation)</text>
+
+</svg>
