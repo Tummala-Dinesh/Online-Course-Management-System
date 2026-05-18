@@ -18,3 +18,5 @@ Welcome to Online Course Mangement system Project!
  - Grade
 
  Each entity consists of several attributes.
+ ## Entity Relationship diagram
+ <img src="ERD.svg" alt="ER Diagram" width="700">
